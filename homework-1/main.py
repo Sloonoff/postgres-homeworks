@@ -5,7 +5,7 @@ import csv
 
 if __name__ == '__main__':
 
-    with psycopg2.connect(host='localhost', database='north', user='postgres', password='Nodar126') as connection:
+    with psycopg2.connect(host='localhost', database='north', user='postgres', password='nba2k9') as connection:
 
         with connection.cursor() as cur:
             emp_file = list(csv.reader(open('north_data/employees_data.csv', encoding='utf-8')))
